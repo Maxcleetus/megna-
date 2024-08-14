@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+    color: #1eb768;
+}
+.logo{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    background: rgba(18, 15, 18, 0.589);
+    display: inline-block;
+    padding: 10px;
+    font-style: italic;
+    border-radius: 10px;
+}
+.fa-bars{
+   display: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.navbar ul{
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 25px;
+    margin: 15px 30px;
+    border-bottom: 2px solid #000000;
+    transition: transform 1s , border-bottom 2s;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:  rgb(102, 102, 102);
+    transition: color 2s ;
+}
+.navbar ul li a:hover{
+    color: #1eb768;
+}
+.navbar ul li:hover{
+    transform: translateY(-5px);
+    border-bottom: 2px solid #1eb768;
+}
+/* ..............home............ */
+
+ #home{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 100px;
+ }
+ #home .text{
+    flex-basis: 60%;
+ }
+ #home .profile img{
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    border: 2px solid #1eb768;
+ }
+ #home .text{
+    margin-left: 30px;
+ }
+ #home .text h1 span{
+    font-size: 45px;
+    background:rgba(18, 15, 18, 0.589) ;
+    border-radius: 10px;
+    padding: 5px;
+    transition: background 1s ;
+    border: 2px solid #1eb768;
+    font-weight: 600;
+ }
+ #home .text h1 span:hover{
+    background: #000000;
+
+ }
+ #home .text h1{
+    transition: transform 1s ;
+ }
+ #home .text h1:hover{
+    transform: translateY(-30px);
+ }
+ .phone{
+   display: none;
+ }
+ .profile p{
+   position: absolute;
+   font-size: 35px;
+   margin-top: 100px;
+   transition: 2s;
+}
+ .profile img{
+    position: relative;
+    transition: transform 1s;
+ }
+ .profile img:hover{
+    transform: translateX(80px);
+ }
+#chemical{
+   transition: 2s;
+}
+#home .text p{
+   height: 200px;
+   width: 500px;
+   font-size: 29px;
+}
+/* .............about.............. */
+#about{
+   display: flex;
+   margin-top: 100px;
+}
+#about .about-me{
+   position: relative;
+   transition: 1s;
+}
+#about .about-me h1{
+   font-size: 65px;
+}
+#about .about-me p{
+   color: #44815f;
+   font-size: 20px;
+}
+#about .photo img{
+   height: 500px;
+   width: 400px;
+   border-radius: 10px;
+   position: absolute;
+   margin-left: 200px;
+   border: 2px solid #1eb768;
+}
+#about .photo{
+   flex-basis: 60%;
+}
+#about .about-me ul li {
+   font-size: 25px;
+   list-style: none;
+   margin: 30px;
+   margin-left: -1px;
+   position: relative;
+   transition: 1s;
+}
+#about .about-me .flex{
+   display: flex;
+   transition: 1s;
+}
+#about .about-me .tab-links{
+   cursor: pointer;
+   transition: 1s;
+}
+#about .about-me .tab-links::after{
+   content: "";
+   background: #44815f;
+   width: 0%;
+   height: 2px;
+   position: absolute;
+   top: 31px;
+   left: 0;
+   transition: 1s;
+}
+#about .about-me .active-link::after{
+   content: "";
+   width: 100%;
+}
+.contain.active-tab{
+   display: block;
+   color: #44815f;
+}
+.contain{
+   position: absolute;
+   display: none;
+}
+/* .............services........... */
+.services{
+   margin-top: 400px;
+   margin-left: 150px;
+   font-size: 30px;
+}
+.grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   margin-top: 70px;
+   margin-left: 150px;
+   margin-right: 150px;
+   grid-gap: 150px;
+}
+.grid div{
+   background: rgb(61, 61, 61);
+   padding: 20px;
+   border-radius: 10px;
+   transition: 1s;
+}
+.grid div:hover{
+   background: #1eb768;
+   color: black;
+   transform: translateY(-10px);
+}
+.grid p{
+   margin-top: 5px;
+}
+.grid i{
+   margin-left: 3px;
+   color: #000000;
+   font-size: 20px;
+   margin-bottom: 5px;
+}
+/* .............contact........... */
+.contact{
+   margin-top: 70px;
+   margin-left: 150px;
+   font-size: 30px;
+   flex-basis: 50%;
+}
+
+.contact p{
+   margin-top: 20px;
+   margin-left: 10px;
+   color: #44815f;
+   font-size: 30px;
+}
+.contact i{
+   margin-right: 10px;
+   color: #1eb768;
+}
+.contact .fa-brands{
+   margin-left: 5px;
+   font-size: 30px;
+   color:  rgb(61, 61, 61);
+   transition: 1s;
+}
+.contact .fa-brands:hover{
+   color: #1eb768;
+   transform: translatey(-5px);
+}
+#contact{
+   display: flex;
+}
+.cv a{
+   text-decoration: none;
+   font-size: 20px;
+   padding: 20px;
+   background-color: #1eb768;
+   border-radius: 10px;
+   color: rgb(61,61,61);
+   display: inline-block;
+   margin-top: 170px;
+   transition: 1s;
+}
+.cv a:hover{
+   color: #1eb768;
+   background-color:rgb(61,61,61) ;
+}
+.copyright{
+   background-color:rgb(61, 61, 61);
+   padding: 10px;
+   margin-top: 40px;
+   font-size: 20px;
+   color: #44815f;
+   text-align: center;
+}
+.copyright .fa-heart{
+   color: #1eb768;
+}
+html{
+   scroll-behavior: smooth;
+}
+.fa-x{
+   display: none;
+}
+#chemical-phone{
+   display: none;
+}
+/* ...............media phone............... */
+
+@media (max-width:767px){
+   /* ..........nav bar............. */
+   .logo{
+      font-size: 15px;
+   }
+   #bars{
+      display: block;
+      position: fixed;
+      right: 300px;
+      top: -10px;
+      height: 100vh;
+      background: linear-gradient( to bottom ,rgba(0,0,0,1), rgb(2, 41, 4));
+      margin-top: 50px;
+      z-index: 2;
+      transition: 1s;
+   }
+   #bars i{
+      position: absolute;
+      top: 0;
+      left: 15px;
+      font-size: 15px;
+      color: #44815f;
+   }
+   .navbar ul li{
+      border-bottom: 0px;
+   }
+   .navbar ul li:hover{
+      border-bottom: 0px;
+   }
+   .fa-bars{
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 25px;
+      top: 43px;
+      text-align: end;
+      font-size: 20px;
+
+   }
+   /* ..................home............ */
+   #home{
+      margin-top: -60px;
+   }
+   #home .text p{
+      font-size: 18px;
+      height: 480px;
+   }
+   #home .text h1{
+      font-size: 20px;
+   }
+   #home .text h1 span{
+      font-size: 25px;
+   }
+   #home .profile img{
+      height: 650px ;
+      
+   }
+   .phone{
+      display: block;
+      height: 250px;
+      width: 200px;
+      margin-top: -322px;
+      margin-bottom: 55px;
+      border-radius: 10px;
+      border: 2px solid #1eb768;
+  }
+  .fa-x{
+   display: block;
+  }
+  #chemical{
+   display: none;
+  }
+  #chemical-phone{
+   display: block;
+  }
+   /* ...................about.............. */
+   #about .photo img{
+      height: 200px;
+      width: 150px;
+      margin-left: 20px;
+      margin-top: 30px;
+   }
+   #about .about-me h1 {
+      font-size: 44px;
+      margin-bottom: 260px;
+  }
+  #about .about-me {
+   position: absolute;
+   top: 717px;
+   left: 22px;
+  }
+  #about .about-me .flex {
+   margin-top: 58px;}
+   /* .................services............... */
+   .services{
+      font-size: 25px;
+      margin-left: 20px;
+      margin-top: 430px;
+   }
+   .grid{
+      margin-top: 400px;
+      margin-left: 83px;
+      grid-gap: 25px;
+   }
+   /* .............contact......... */
+   #contact{
+      display: block;
+   }
+   .contact{
+      font-size: 25px;
+      margin-left: 50px;
+   }
+   .contact p{
+      font-size: 20px;
+      position: relative;
+   }
+   .cv a{
+      font-size: 25px;
+      padding: 15px;
+      margin-left: 70px;
+      margin-right: 162px;
+      margin-bottom: 180px;
+      margin-top: 20px;
+   }
+   
+}
