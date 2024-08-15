@@ -6,114 +6,123 @@
     <title>Megna Cleetus</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <h1> Megna Cleetus</h1>
+    <div class="bdy2">
+
+
+        <nav >
+            <div class="container">
+                <div class="logo">
+                    <h1> Megna Cleetus</h1>
+                </div>
+                <div class="navbar">
+                    <ul id="bars">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i onclick="clickingback()" class="fa-solid fa-x"></i>
+                    </ul>
+                </div>
+                <i onclick="clicking()" class="fa-solid fa-bars"></i>
             </div>
-            <div class="navbar">
-                <ul id="bars">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i onclick="clickingback()" class="fa-solid fa-x"></i>
-                </ul>
-            </div>
-            <i onclick="clicking()" class="fa-solid fa-bars"></i>
-        </div>
-    </nav>
+        </nav>
     <!-- ............HOME............. -->
-    <div id="home">
-        <div class="text" onmouseenter="rightchemical()" onmouseleave="leftchemical()">
-            <p><i class="fa-solid fa-quote-left"></i>IF YOU CAN CHANGE YOUR MIND <BR>YOU CAN CHANGE YOUR LIFE <i class="fa-solid fa-quote-right"></i></BR></p>
-            <img src="./images/6165559333505580962.jpg" class="phone">
-            <h1>Hi <br>Im <span>Megna Cleetus</span> From <span>India</span><br><div id="chemical">Chemical Engineer</div><div id="chemical-phone">Chemical Engineer</div></h1>
+        <div id="home">
+            <div class="text" onmouseenter="rightchemical()" onmouseleave="leftchemical()">
+                <p><i class="fa-solid fa-quote-left"></i>IF YOU CAN CHANGE YOUR MIND <BR>YOU CAN CHANGE YOUR LIFE <i class="fa-solid fa-quote-right"></i></BR></p>
+                <img class="image2" src="./images/6165559333505580962.jpg" alt="">
+                <h1>Hi <br>Im <span>Megna Cleetus</span> From <span>India</span><br><div id="chemical">Chemical Engineer</div><div class="chemical-phone">Chemical Engineer</div></h1>
+            </div>
+
+            <div class="profile">
+                <p id="profile">Welcome To My Portfolio</p>
+                <img onmouseenter="goleft()" onmouseleave="goright()" src="images/6165559333505580962.jpg" alt="image">
+            </div>
+        
         </div>
-        <div class="profile">
-            <p id="profile">Welcome To My Portfolio</p>
-            <img onmouseenter="goleft()" onmouseleave="goright()" src="images/6165559333505580962.jpg" alt="image">
-        </div>
-    </div>
     <!-- .......................about.............. -->
-     <div id="about">
-        <div class="photo">
-            <img src="./images/6165559333505580953.jpg" alt="image">
+        <div id="about">
+            <div class="photo">
+                <img src="./images/6165559333505580953.jpg" alt="image">
+            </div>
+            <div class="about-me">
+                <h1>About Me</h1>
+                <p>Hi im megna cleetus . im a chemical engineer <br> curently im working at BPCL and im very hard work in nature <br> im very friendly to my colleages and im also helping them in their troubles 
+                <br>and im also motivating so many students for achieving their target </p>
+                <ul class="flex">
+                    <li class="tab-links active-link" onclick="change('skills')">Skills</li>
+                    <li class="tab-links" onclick="change('experience')">Experience</li>
+                    <li class="tab-links" onclick="change('education')">Education</li>
+                </ul>
+                <div class="contain active-tab" id="skills">
+                    <ul>
+                        <li>Problem solving skills</li>
+                        <li>Ability to work well under pressure</li>
+                        <li>Communication and teamworking skills</li>
+                    </ul>
+                </div>
+                <div class="contain" id="experience">
+                    <ul>
+                        <li>working at BPCL</li>
+                        <li>Experience in production or research environment</li>
+                        <li>Practical experience at intenship</li>
+                    </ul>
+                </div>
+                <div class="contain" id="education">
+                    <ul>
+                        <li>Doing M tech at GEC Thrissur</li>
+                        <li>Completed B tech at GEC Kozhikode</li>
+                        <li>Completed 12th at GVHSS Irinjalakuda</li>
+                        <li>Completed 10th at OLF GHS Mathilakam</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="about-me">
-            <h1>About Me</h1>
-            <p>Hi im megna cleetus . im a chemical engineer <br> curently im working at BPCL and im very hard work in nature <br> im very friendly to my colleages and im also helping them in their troubles 
-            <br>and im also motivating so many students for achieving their target </p>
-            <ul class="flex">
-                <li class="tab-links active-link" onclick="change('skills')">Skills</li>
-                <li class="tab-links" onclick="change('experience')">Experience</li>
-                <li class="tab-links" onclick="change('education')">Education</li>
-            </ul>
-            <div class="contain active-tab" id="skills">
-                <ul>
-                    <li>Problem solving skills</li>
-                    <li>Ability to work well under pressure</li>
-                    <li>Communication and teamworking skills</li>
-                </ul>
-            </div>
-            <div class="contain" id="experience">
-                <ul>
-                    <li>working at BPCL</li>
-                    <li>Experience in production or research environment</li>
-                    <li>Practical experience at intenship</li>
-                </ul>
-            </div>
-            <div class="contain" id="education">
-                <ul>
-                    <li>Doing M tech at GEC Thrissur</li>
-                    <li>Completed B tech at GEC Kozhikode</li>
-                    <li>Completed 12th at GVHSS Irinjalakuda</li>
-                    <li>Completed 10th at OLF GHS Mathilakam</li>
-                </ul>
-            </div>
-        </div>
-     </div>
      <!-- .................services................... -->
-     <div id="services">
-        <div class="services">
-            <h1>Services</h1>
-        </div>
-        <div class="grid">
-            <div>
-                <i class="fa-solid fa-flask"></i>
-                <h1>design experiments</h1>
-                <p>it can be a vital tool for accelerating the discovery and creation of viable new products</p>
+        <div id="services">
+            <div class="services">
+                <h1>Services</h1>
             </div>
-            <div>
-                <i class="fa-solid fa-atom"></i>
-                <h1>Specialty Chemicals</h1>
-                <p>Conduct research to develop new and improved manufacturing processes</p>
+            <div class="grid">
+                <div>
+                    <i class="fa-solid fa-flask"></i>
+                    <h1>design experiments</h1>
+                    <p>it can be a vital tool for accelerating the discovery and creation of viable new products</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-atom"></i>
+                    <h1>Specialty Chemicals</h1>
+                    <p>Conduct research to develop new and improved manufacturing processes</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-vial"></i>
+                    <h1>Industrial Gases.</h1>
+                    <p>Conduct research to develop new and improved manufacturing processes.</p>
+                </div>
             </div>
-            <div>
-                <i class="fa-solid fa-vial"></i>
-                <h1>Industrial Gases.</h1>
-                <p>Conduct research to develop new and improved manufacturing processes.</p>
-            </div>
-        </div>
     <!-- ........contact....... -->
-     <div id="contact">
-        <div class="contact">
-            <h1>Contact Me</h1>
-            <P><i class="fa-solid fa-envelope"></i>megnacleetus@gmail.com</P>
-            <p><i class="fa-solid fa-phone"></i>0123456789</p>
-            <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-square-twitter"></i></p>
+        <div id="contact">
+            <div class="contact">
+                <h1>Contact Me</h1>
+                <P><i class="fa-solid fa-envelope"></i>megnacleetus@gmail.com</P>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <p><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-square-twitter"></i></p>
+            </div>
+            <div class="cv">
+                <a href="./images/my-cv.pdf" download>Download CV</a>
+            </div>
         </div>
-        <div class="cv">
-            <a href="./images/my-cv.pdf" download>Download CV</a>
-        </div>
-     </div>
      <!-- .................copyright................ -->
-      <div class="copyright">
-        <p>Copy Right <i class="fa-regular fa-copyright"></i> megna<i class="fa-solid fa-heart"></i>cleetus</p>
-      </div>
+        <div class="cv-phone">
+        <a href="./images/my-cv.pdf" download>Download CV</a>
+        </div>
+        <div class="copyright">
+            <p>Copy Right <i class="fa-regular fa-copyright"></i> megna<i class="fa-solid fa-heart"></i>cleetus</p>
+        </div>
     </div>
-    <script src="./script.js"></script>
+        <script src="./script.js"></script>
 </body>
 </html> 

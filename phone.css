@@ -1,0 +1,140 @@
+#bars{
+    display: block;
+    position: fixed;
+    right: -200px;
+    top: -40px;
+    height: 100vh;
+    background: linear-gradient( to bottom ,rgba(0,0,0,1), rgb(2, 41, 4));
+    margin-top: 50px;
+    z-index: 2;
+    transition: 1s;
+ }
+ #bars i{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    font-size: 15px;
+    color: #44815f;
+ }
+ .navbar ul li{
+    border-bottom: 0px;
+    font-size: 17px;
+ }
+ .navbar ul li:hover{
+    border-bottom: 0px;
+ }
+ .fa-bars{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 32px;
+    top: 45px;
+    text-align: end;
+    font-size: 15px;
+
+ }
+ .fa-x{
+    display: block;
+    position: absolute;
+    top: 25px;
+ }
+.profile{
+    display: none;
+}
+.photo{
+    display: none;
+}
+.cv a{
+    display: none;
+}
+#home .text p{
+    width: 288px;
+    font-size: 14px;
+    height: 110px;
+} 
+.contact{
+    margin-left: 30px;
+    font-size: 22px;
+}
+.contact p{
+    font-size: 19px;
+}
+
+#home .text h1 span{
+    font-size: 15px;
+}
+
+#home .text h1 {
+    font-size: 20px;
+}
+.services{
+    margin-left: 35px;
+    font-size: 18px;
+    margin-top: 275px;
+}
+.grid{
+    margin-left: 40px;
+}
+#about{
+    margin-left: 34px;
+}
+#about .about-me p{
+    width: 263px;
+}
+#about .about-me h1{
+    font-size: 30px;
+    margin-top: -53px;
+}
+#about .about-me ul li{
+    font-size: 19px;
+}
+.logo{
+    font-size: 15px;
+}
+#chemical{
+    display: none;
+ }
+ .chemical-phone{
+    display: block;
+ }
+ .image2{
+    display: block;
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #1eb768;
+ }
+ .grid{
+    margin-top: 33px;
+    grid-gap: 40px;
+    margin-left: 33px;
+ }
+ .contact{
+    flex-basis: 90%;
+    margin-left: 40px;
+    font-size: 18px;
+ }
+ .contact .fa-brands{
+    font-size: 24px ;
+ }
+ .contact p{
+    font-size: 17px;
+    margin-left: 2px;
+ }
+ .copyright{
+    width: auto;
+    font-size: 15px;
+ }
+ .cv-phone{
+    display: block;
+    margin-left: 48px;
+    margin-top: 25px;
+ }
+ .cv-phone a{
+    text-decoration: none;
+    color: #1eb768;
+    background:rgb(61,61,61) ;
+    padding: 10px;
+    border-radius: 10px;
+ }

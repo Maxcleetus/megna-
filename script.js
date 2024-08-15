@@ -31,8 +31,8 @@ function change(tab){
 // menu
 var navbar = document.getElementById("bars")
 function clicking(){
-    navbar.style.right="460px"
+    navbar.style.right="-48px"
 }
 function clickingback(){
-    navbar.style.right="300px"
+    navbar.style.right="-200px"
 }
